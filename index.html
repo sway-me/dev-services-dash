@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sway Dev Services</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ui-kit.css">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  style="max-width: 1440px; margin: auto; padding: 1rem 0;">
+<div class="header">
+    <h1 >Dev Services</h1>
+    <img id="toggle" src="svg/light/toggle.svg" alt="toggle">
+</div>
+
+<div  class="highlight"></div>
+
+<div id="container" style="display: flex; flex-wrap: wrap;"></div>
+<script>
+
+    const DOMAIN = 'resistr.life'
+
+    const services = [
+        'pgadmin',
+        'phpmyadmin',
+        'redis-commander',
+        'mongoku', '' +
+        'minio',
+        'emqx',
+        'hasura',
+        'kafka',
+        'konga',
+        'gitlab',
+        'garie',
+        'sentry',
+        // 'commons-host',
+        'grafana',
+        'postal',
+        'gorush',
+        'textbelt',
+        'keycloak',
+        'wraith',
+        'matrix',
+    ]
+
+
+    const container = document.getElementById("container")
+    const toggle = document.getElementById('toggle');
+    const renderServices = (mode) => {
+        container.innerHTML = "";
+        services.forEach(svc => {
+            const anchor = document.createElement('a')
+            anchor.href = `https://${svc}.${DOMAIN}`
+            anchor.innerHTML = `<img class="service" src="svg/${mode}/${svc}.svg"  alt="${svc}"/>`
+            container.append(anchor)
+        })
+    }
+
+    renderServices('light')
+
+
+    const {classList} = document.body
+    console.log(toggle.src)
+    toggle.onclick = () =>{
+        if (classList.contains('dark')){
+            toggle.src = './svg/light/toggle.svg'
+            renderServices('light')
+            classList.remove('dark')
+        } else {
+            toggle.src = './svg/dark/toggle.svg'
+            renderServices('dark')
+             classList.add('dark')
+        }
+    }
+</script>
+</body>
+</html>
