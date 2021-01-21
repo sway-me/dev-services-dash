@@ -26,25 +26,8 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="ide.date.format" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="945" y="-13" width="973" height="715" key="SettingsEditor" timestamp="1609894135766">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="945" y="-13" width="973" height="715" key="SettingsEditor/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1609894135766" />
-    <state x="1117" y="-195" width="576" height="624" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610157144069">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1117" y="-195" width="576" height="624" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1610157144069" />
-    <state x="1097" y="115" key="run.anything.popup" timestamp="1609893984259">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1097" y="115" key="run.anything.popup/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1609893984259" />
-    <state x="1098" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1610157339432">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1098" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1610157339432" />
+    <option name="version" value="3" />
   </component>
 </project>

@@ -1,7 +1,9 @@
+@import url("https://minio.resistr.life/sway-me/shared/ui-kit/base.css");
+
 .highlight {
     width: 40px;
     height: 10px;
-    background:  linear-gradient(to right, var(--orange), var(--magenta));
+    background:  var(--pink-grad);
     margin-bottom: 1rem;
     margin-left: 2rem;
 }
@@ -43,6 +45,5 @@
     }
 }
 
-.dark {
-    background: #161925;
-}
+
+

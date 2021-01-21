@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>D E V S E R V I C E S</title>
+    <title>D E V</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="svg/favicon.svg" >
-    <link rel="stylesheet" href="ui-kit.css">
+    <link rel="icon" type="image/png" href="https://minio.resistr.life/sway-me/shared/ui-kit/logo.svg" >
     <link rel="stylesheet" href="main.css">
 </head>
 <body  style="max-width: 1440px; margin: auto; padding: 1rem 0;">
@@ -20,12 +19,11 @@
 <script>
 
     const DOMAIN = 'resistr.life'
-
     const services = [
         'pgadmin',
         'phpmyadmin',
         'redis-commander',
-        'mongoku', '' +
+        'mongoku',
         'minio',
         'emqx',
         'hasura',
@@ -35,7 +33,8 @@
         'garie',
         'sentry',
         // 'commons-host',
-        'grafana',
+        'loki',
+        'bitwarden',
         'postal',
         'gorush',
         'textbelt',
@@ -60,16 +59,16 @@
     renderServices('light')
 
 
-    const {classList} = document.body
     toggle.onclick = () =>{
-        if (classList.contains('dark')){
+
+        if ( document.documentElement.dataset.theme === 'dark'){
             toggle.src = './svg/light/toggle.svg'
             renderServices('light')
-            classList.remove('dark')
+            document.documentElement.dataset.theme = 'light'
         } else {
             toggle.src = './svg/dark/toggle.svg'
             renderServices('dark')
-             classList.add('dark')
+            document.documentElement.dataset.theme = 'dark'
         }
     }
 </script>
